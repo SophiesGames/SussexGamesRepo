@@ -104,6 +104,9 @@ public class Player : MonoBehaviour
                 Invulnerability(2);
             } else if(eb.size < size){
                 size += eb.size / 5;
+                if(size > 50){
+                    size = 50;
+                }
                 Destroy(collision.gameObject);
             }
 
@@ -124,6 +127,7 @@ public class Player : MonoBehaviour
             sr.color = new Color(255, 255, 255, 1);
             yield return new WaitForSeconds(0.1f);
         }
+        sr.color = new Color(255, 255, 255, 1);
         StopCoroutine(flashC);
     }
 }
