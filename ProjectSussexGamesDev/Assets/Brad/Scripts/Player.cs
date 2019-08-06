@@ -96,8 +96,17 @@ public class Player : MonoBehaviour
     {
         if (collision.gameObject.GetComponent<Enemy_Basic>() != null)
         {
-            Damage(1);
-            Invulnerability(2);
+            Enemy_Basic eb = collision.gameObject.GetComponent<Enemy_Basic>();
+            //If the enemies size is more than the playes, the player takes damage
+            //If the enemies size is less than the players, the enemy is destroyed and the players size increases
+            if(eb.size > size){
+                Damage(1);
+                Invulnerability(2);
+            } else if(eb.size < size){
+                size += eb.size / 5;
+                Destroy(collision.gameObject);
+            }
+
         }
     }
 
