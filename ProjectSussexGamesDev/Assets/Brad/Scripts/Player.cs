@@ -9,6 +9,7 @@ public class Player : MonoBehaviour
     public float size = 0;
     public int cameraIncreaseIncrement = 5; // how much the size needs to crease before the camera gets larger
     public Camera camera;
+    public Vector3 movingVector = Vector3.zero;
 
     float invulnerabilityTime = 0;
     float invulnerabilityTimer = 0;
@@ -38,7 +39,8 @@ public class Player : MonoBehaviour
         {
             Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             mousePos.z = 0;
-            transform.position += -(transform.position - mousePos)/10;
+            movingVector = -(transform.position - mousePos) / 10;
+            transform.position += movingVector;
         }
 
         //If invulnerability is activated the player will not be able to take any damage
@@ -107,7 +109,16 @@ public class Player : MonoBehaviour
                 if(size > 50){
                     size = 50;
                 }
-                Destroy(collision.gameObject);
+
+                float[] x = Spawning.createRadiusRange(10, 15, this);
+
+                float[] y = Spawning.createRadiusRange(6, 11, this);
+
+                Vector3 spawnPosition = new Vector3(transform.position.x + x[Random.Range(0, 2)], transform.position.y + y[Random.Range(0, 2)]);
+
+                collision.gameObject.transform.position = spawnPosition;
+                collision.gameObject.GetComponent<Enemy_Basic>().randomSpeed();
+                //Destroy(collision.gameObject);
             }
 
         }

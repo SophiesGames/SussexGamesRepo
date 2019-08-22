@@ -7,22 +7,29 @@ public class Background : MonoBehaviour
     public float maxViewDst = 3;
     public Transform player;
     public GameObject backgroundImage;
-    public int poolSize = 9;
+    public int poolSize = 20;
 
     int chunkSize;
     int chunksVisibleInViewDst;
+
+    int previousChunkCoordX = 0;
+    int previousChunkCoordY = 0;
+
+    Player playerObj;
 
     Queue<Vector2> pool = new Queue<Vector2>();
     Dictionary<Vector2, BackgroundChunk> BackgroundChunkDictionary = new Dictionary<Vector2, BackgroundChunk>();
 
     void Start()
     {
+        playerObj = player.GetComponent<Player>();
         chunkSize = 10;
         chunksVisibleInViewDst = Mathf.RoundToInt(maxViewDst / chunkSize);
     }
 
     void Update()
     {
+
         UpdateVisibleChunks();
     }
 
@@ -32,20 +39,31 @@ public class Background : MonoBehaviour
         int currentChunkCoordX = Mathf.RoundToInt(player.position.x / chunkSize);
         int currentChunkCoordY = Mathf.RoundToInt(player.position.y / chunkSize);
 
+        bool changePreviousCoords = false;
+        
         for (int yOffset = -chunksVisibleInViewDst; yOffset <= chunksVisibleInViewDst; yOffset++)
         {
             for (int xOffset = -chunksVisibleInViewDst; xOffset <= chunksVisibleInViewDst; xOffset++)
             {
                 Vector2 viewedChunkCoord = new Vector2(currentChunkCoordX + xOffset, currentChunkCoordY + yOffset);
-                if(BackgroundChunkDictionary.Count < poolSize){
+                if (BackgroundChunkDictionary.Count < poolSize) {
                     addToPool(viewedChunkCoord);
                 }
-                Vector2 key = pool.Dequeue();
-                BackgroundChunkDictionary[key].setNewPosition(viewedChunkCoord, chunkSize);
-                pool.Enqueue(key);
+                if (currentChunkCoordX != previousChunkCoordX || currentChunkCoordY != previousChunkCoordY) {
+                    Vector2 key = pool.Dequeue();
+                    BackgroundChunkDictionary[key].setNewPosition(viewedChunkCoord, chunkSize);
+                    pool.Enqueue(key);
+                    changePreviousCoords = true;
+                }
 
             }
         }
+        if (changePreviousCoords == true)
+        {
+            previousChunkCoordX = currentChunkCoordX;
+            previousChunkCoordY = currentChunkCoordY;
+        }
+        
     }
 
     void addToPool(Vector2 viewedChunkCoord)
