@@ -20,6 +20,7 @@ public class Spawning : MonoBehaviour
     private Player playerObj;
     [HideInInspector]
     public static List<GameObject> enemies = new List<GameObject>();
+    public float maxEnemyDist = 50;
 
     // Start is called before the first frame update
     void Start()
@@ -60,6 +61,14 @@ public class Spawning : MonoBehaviour
             }
 
             
+        }
+
+        foreach (GameObject enemy in enemies)
+        {
+            if (Vector3.Distance(player.transform.position, enemy.transform.position) > maxEnemyDist)
+            {
+                respawn(enemy, player.gameObject);
+            }
         }
 
         if (Mathf.RoundToInt(GameInfo.timer) % EnemyCounterIncreaseDelay == 0 && Mathf.RoundToInt(GameInfo.timer) != previousTimerAmount)
@@ -105,5 +114,19 @@ public class Spawning : MonoBehaviour
         x[1] = Random.Range(-MaxDist, -MinDist);
 
         return x;
+    }
+
+    public static void respawn(GameObject obj, GameObject player)
+    {
+        Player playerObj = player.GetComponent<Player>();
+
+        float[] x = createRadiusRange(10, 15, playerObj);
+
+        float[] y = createRadiusRange(6, 11, playerObj);
+
+        Vector3 spawnPosition = new Vector3(player.transform.position.x + x[Random.Range(0, 2)], player.transform.position.y + y[Random.Range(0, 2)]);
+
+        obj.transform.position = spawnPosition;
+        obj.GetComponent<Enemy_Basic>().randomSpeed();
     }
 }

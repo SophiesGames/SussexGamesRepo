@@ -322,7 +322,7 @@ MonoBehaviour:
   enemyPrefab: {fileID: 2932481576563451551, guid: a5930c879074c4e1fb3805bdc8ae6451,
     type: 3}
   player: {fileID: 1899755975}
-  enemies: []
+  maxEnemyDist: 50
 --- !u!1 &855681699
 GameObject:
   m_ObjectHideFlags: 0

@@ -5,7 +5,6 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     public float health = 3;
-    [Range(15,50)]
     public float size = 0;
     public int cameraIncreaseIncrement = 5; // how much the size needs to crease before the camera gets larger
     public Camera camera;
@@ -110,14 +109,9 @@ public class Player : MonoBehaviour
                     size = 50;
                 }
 
-                float[] x = Spawning.createRadiusRange(10, 15, this);
+                Spawning.respawn(collision.gameObject, this.gameObject);
 
-                float[] y = Spawning.createRadiusRange(6, 11, this);
-
-                Vector3 spawnPosition = new Vector3(transform.position.x + x[Random.Range(0, 2)], transform.position.y + y[Random.Range(0, 2)]);
-
-                collision.gameObject.transform.position = spawnPosition;
-                collision.gameObject.GetComponent<Enemy_Basic>().randomSpeed();
+               
                 //Destroy(collision.gameObject);
             }
 
