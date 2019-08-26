@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -75,7 +76,9 @@ public class Player : MonoBehaviour
 
     //Called when the player dies. It currently reloads the scene. This will need to be changed later
     void Death(){
-        Application.LoadLevel(0);
+        //Application.LoadLevel(0);
+        Scene scene = SceneManager.GetActiveScene();
+        SceneManager.LoadScene(scene.name);
     }
 
     //Removed X amount of health from the player

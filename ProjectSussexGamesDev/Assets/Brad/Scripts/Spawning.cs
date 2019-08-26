@@ -25,6 +25,7 @@ public class Spawning : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        enemies = new List<GameObject>();
         playerObj = player.GetComponent<Player>();
     }
 
@@ -46,14 +47,10 @@ public class Spawning : MonoBehaviour
                     amountOfSmaller += 1;
                 }
             }
-            print(amountOfSmaller + " " + enemies.Count);
             float currentPercent = (amountOfSmaller / enemies.Count)*100;
-            print(currentPercent+"%");
             if (currentPercent <= percentOfSmallerEnemies)
             {
-                print("Changing size");
                 newEnemy.GetComponent<Enemy_Basic>().setSize(Random.Range(1, playerObj.size));
-                print("Size: " + newEnemy.GetComponent<Enemy_Basic>().size);
             }
             else
             {
