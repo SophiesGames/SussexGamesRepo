@@ -16,6 +16,7 @@ public class Spawning : MonoBehaviour
     int previousTimerAmount = 0;
 
     public GameObject enemyPrefab;
+    public Radar radar;
 
     public Transform player;
     private Player playerObj;
@@ -38,6 +39,7 @@ public class Spawning : MonoBehaviour
 
             GameObject newEnemy = spawnNewObject(enemyPrefab);
             enemies.Add(newEnemy);
+            radar.createBlip(newEnemy);
             float amountOfSmaller = 0;
 
             foreach (GameObject enemy in enemies)
