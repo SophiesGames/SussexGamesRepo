@@ -257,6 +257,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EnemyCounterIncreaseDelay: 5
   amountOfEnemies: 10
+  enemyLimit: 16
   percentOfSmallerEnemies: 30
   enemyPrefab: {fileID: 2932481576563451551, guid: a5930c879074c4e1fb3805bdc8ae6451,
     type: 3}
