@@ -8,6 +8,7 @@ public class Spawning : MonoBehaviour
     public float EnemyCounterIncreaseDelay = 5;
 
     public int amountOfEnemies = 10;
+    public int enemyLimit = 12;
 
     [Range(0, 100)]
     public int percentOfSmallerEnemies = 30;
@@ -68,7 +69,7 @@ public class Spawning : MonoBehaviour
             }
         }
 
-        if (Mathf.RoundToInt(GameInfo.timer) % EnemyCounterIncreaseDelay == 0 && Mathf.RoundToInt(GameInfo.timer) != previousTimerAmount)
+        if (Mathf.RoundToInt(GameInfo.timer) % EnemyCounterIncreaseDelay == 0 && Mathf.RoundToInt(GameInfo.timer) != previousTimerAmount && enemies.Count < enemyLimit)
         {
             //print(amountOfEnemies + " " + GameInfo.enemies.Count);
             amountOfEnemies += 1;

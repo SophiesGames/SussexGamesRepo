@@ -72,6 +72,15 @@ public class Player : MonoBehaviour
         //The players size will chance immediatly
         transform.localScale = new Vector3((size / 50) * 2, (size / 50) * 2, (size / 50) * 2);
         previousSize = (int) size;
+
+        float angle = Mathf.Atan2(movingVector.y, movingVector.x) * Mathf.Rad2Deg;
+        transform.rotation = Quaternion.AngleAxis(angle-90, Vector3.forward);
+
+    }
+
+    private void LateUpdate()
+    {
+        camera.gameObject.transform.rotation = Quaternion.identity;
     }
 
     //Called when the player dies. It currently reloads the scene. This will need to be changed later

@@ -44,10 +44,11 @@ public class Enemy_Basic : MonoBehaviour
         //Moving the enemy
         transform.position = Vector3.Slerp(transform.position, transform.position + dir, speed/100);
         transform.localScale = new Vector3((size / 50) * 2, (size / 50) * 2, (size / 50) * 2);
-		//print("enemy" + size);
+        //print("enemy" + size);
+        float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
+        transform.rotation = Quaternion.AngleAxis(angle+90, Vector3.forward);
 
-
-	}
+    }
 
 
 
