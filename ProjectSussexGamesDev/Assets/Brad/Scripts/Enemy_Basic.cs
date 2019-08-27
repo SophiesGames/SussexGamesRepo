@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class Enemy_Basic : MonoBehaviour
 {
     [HideInInspector]
@@ -16,11 +17,13 @@ public class Enemy_Basic : MonoBehaviour
     public float speed = 5;
 
     Vector3 dir;
+
     float timer = 0;
     float changeTime = 0;
 
-    // Start is called before the first frame update
-    void Start()
+
+	// Start is called before the first frame update
+	void Start()
     {
         //setSize(Random.Range(5, 50));
         changeTime = Random.Range(0, 3);
@@ -41,10 +44,14 @@ public class Enemy_Basic : MonoBehaviour
         //Moving the enemy
         transform.position = Vector3.Slerp(transform.position, transform.position + dir, speed/100);
         transform.localScale = new Vector3((size / 50) * 2, (size / 50) * 2, (size / 50) * 2);
-        //print("enemy" + size);
-    }
+		//print("enemy" + size);
 
-    public void setSize(float targetSize)
+
+	}
+
+
+
+	public void setSize(float targetSize)
     {
         size = targetSize;
         transform.localScale = new Vector3((size / 50) * 2, (size / 50) * 2, (size / 50) * 2);
@@ -54,4 +61,9 @@ public class Enemy_Basic : MonoBehaviour
     {
         speed = Random.Range(minSpeed, maxSpeed);
     }
+
+
+
+
+
 }
