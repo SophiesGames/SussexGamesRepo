@@ -19,6 +19,7 @@ public class Radar : MonoBehaviour
     private void Start()
     {
         playerObj = player.GetComponent<Player>();
+        gameObject.transform.position = new Vector2(Screen.width/2, 250);
     }
 
     // Update is called once per frame
@@ -61,7 +62,7 @@ public class Radar : MonoBehaviour
         {
             float dist = Vector3.Distance(target.position, enemy.transform.position);
             blip.transform.localScale = new Vector2(enemyBasic.size/50, enemyBasic.size/50);
-            Vector3 pos = new Vector3(0, -300, 0);
+            Vector3 pos = new Vector3(0, -10000, 0);
             if (dist <= maxDist)
             {
                 pos = (enemy.transform.position - target.position) * (100/maxDist);

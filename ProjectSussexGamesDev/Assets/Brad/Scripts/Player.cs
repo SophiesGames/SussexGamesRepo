@@ -9,13 +9,18 @@ public class Player : MonoBehaviour
     public float size = 0;
     public int cameraIncreaseIncrement = 5; // how much the size needs to crease before the camera gets larger
     public Camera camera;
+    [HideInInspector]
     public Vector3 movingVector = Vector3.zero;
+    public bool enableDebugControlls = false;
+    public GameObject joystick;
+    public GameObject stick;
 
     float invulnerabilityTime = 0;
     float invulnerabilityTimer = 0;
     bool canTakeDamage = true;
     int previousSize = 0;
     int sizeIncreaseDifference = 0;
+    Vector3 firstTouchPos = Vector3.zero;
 
     SpriteRenderer sr;
     private IEnumerator flashC;
@@ -37,10 +42,36 @@ public class Player : MonoBehaviour
         //When the player press left mouse they move towards the mouse position
         if (Input.GetMouseButton(0))
         {
-            Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            mousePos.z = 0;
-            movingVector = -(transform.position - mousePos) / 10;
+
+            Vector3 mousePos = Vector3.zero;
+
+
+            if(enableDebugControlls == true){
+                mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                mousePos.z = 0;
+                movingVector = -(transform.position - mousePos) / 10;
+                print(movingVector);
+            } else{
+                mousePos = Input.mousePosition;
+                mousePos.z = 0;
+                if (firstTouchPos == Vector3.zero)
+                {
+                    firstTouchPos = mousePos;
+                }
+
+                movingVector = -(firstTouchPos - mousePos) / 2000;
+                print(movingVector);
+                stick.transform.position = mousePos;
+                joystick.transform.position = firstTouchPos;
+            }
+
             transform.position += movingVector;
+
+        } else{
+            movingVector = Vector3.zero;
+            firstTouchPos = Vector3.zero;
+            stick.transform.position = new Vector2(0, -1000);
+            joystick.transform.position = new Vector2(0, -1000);
         }
 
         //If invulnerability is activated the player will not be able to take any damage

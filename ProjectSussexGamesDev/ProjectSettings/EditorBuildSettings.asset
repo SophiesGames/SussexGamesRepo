@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Brad/Scenes/Game-Brad.unity
+    guid: 260fc731d2de13b4fad79d3211cdf107
   m_configObjects: {}
