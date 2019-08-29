@@ -9,8 +9,13 @@
 - Added Blank Button Pressed
 - Removed a Frame from Explosion Animation
 -----------------------------
+- Removed Numbers.png
+- Added FontAlphabetAndNumbers.png
+-----------------------------
 
-Animations & Backgrounds still need to be made
+For slicing:
+CollegeGameAssets.png slice by 48x48
+FontAlphabetAndNumbers.png slice by 7x11
 
 Green Drone Sprite - Player Character
 Red Drone - Basic Enemy
