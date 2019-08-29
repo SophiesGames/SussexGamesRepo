@@ -8,5 +8,10 @@ Purple Squid - Smart Enemy
 
 Blue Hexagon - Invincibility Powerup
 Pink Tablet - Teleportation Powerup
-A-Bomb - Screen CLear Powerup
+A-Bomb - Screen Clear Powerup
 Green Flame - Booster
+
+
+(Added Explosion & Booster animations)
+
+Booster animation is different as it's not 48x48 to fit the booster at the back
