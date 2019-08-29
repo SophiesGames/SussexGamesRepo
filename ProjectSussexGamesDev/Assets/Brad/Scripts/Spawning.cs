@@ -15,7 +15,8 @@ public class Spawning : MonoBehaviour
 
     int previousTimerAmount = 0;
 
-    public GameObject enemyPrefab;
+    public GameObject enemyBasicPrefab;
+    public GameObject enemyPairPrefab;
     public Radar radar;
 
     public Transform player;
@@ -37,27 +38,40 @@ public class Spawning : MonoBehaviour
         if (enemies.Count < amountOfEnemies)
         {
 
-            GameObject newEnemy = spawnNewObject(enemyPrefab);
-            enemies.Add(newEnemy);
-            radar.createBlip(newEnemy);
-            float amountOfSmaller = 0;
+            GameObject newEnemy;
 
-            foreach (GameObject enemy in enemies)
+            if (Random.Range(0, 100) > 30)
             {
-                Enemy_Basic eb = enemy.GetComponent<Enemy_Basic>();
-                if (eb.size < playerObj.size)
-                {
-                    amountOfSmaller += 1;
-                }
-            }
-            float currentPercent = (amountOfSmaller / enemies.Count)*100;
-            if (currentPercent <= percentOfSmallerEnemies)
-            {
-                newEnemy.GetComponent<Enemy_Basic>().setSize(Random.Range(1, playerObj.size));
+                newEnemy = spawnNewObject(enemyBasicPrefab);
+                enemies.Add(newEnemy);
+                radar.createBlip(newEnemy, new Color(255, 255, 255, 1), null);
             }
             else
             {
-                newEnemy.GetComponent<Enemy_Basic>().setSize(Random.Range(1, 50));
+                newEnemy = spawnNewObject(enemyPairPrefab);
+                //enemies.Add(newEnemy);
+            }
+
+            if (newEnemy.GetComponent<Enemy_Basic>() != null) {
+                float amountOfSmaller = 0;
+
+                foreach (GameObject enemy in enemies)
+                {
+                    Enemy_Basic eb = enemy.GetComponent<Enemy_Basic>();
+                    if (eb.size < playerObj.size)
+                    {
+                        amountOfSmaller += 1;
+                    }
+                }
+                float currentPercent = (amountOfSmaller / enemies.Count) * 100;
+                if (currentPercent <= percentOfSmallerEnemies)
+                {
+                    newEnemy.GetComponent<Enemy_Basic>().setSize(Random.Range(1, playerObj.size));
+                }
+                else
+                {
+                    newEnemy.GetComponent<Enemy_Basic>().setSize(Random.Range(1, 50));
+                }
             }
 
             

@@ -13,7 +13,8 @@ public class Radar : MonoBehaviour
     public GameObject playerBlip;
     [SerializeField]
     private Transform blipParent;
-    private List<Blip> blips = new List<Blip>();
+    [HideInInspector]
+    public List<Blip> blips = new List<Blip>();
     private Player playerObj;
 
     private void Start()
@@ -32,13 +33,14 @@ public class Radar : MonoBehaviour
         playerBlip.transform.localScale = new Vector2(playerObj.size/25, playerObj.size / 25);
     }
 
-    public void createBlip(GameObject enemy)
+    public void createBlip(GameObject enemy, Color color, GameObject beam)
     {
         Vector3 pos = player.transform.position - enemy.transform.position;
-        blips.Add(new Blip(enemy, enemyBlip, blipParent));
+        Blip newBlip = new Blip(enemy, enemyBlip, blipParent, color, beam);
+        blips.Add(newBlip);
     }
 
-    class Blip
+    public class Blip
     {
 
         public GameObject enemy;
@@ -46,12 +48,22 @@ public class Radar : MonoBehaviour
         public GameObject blip;
         public Transform blipParent;
         public Image blipImage;
+        public Color color;
+        public GameObject beam;
+        public RectTransform beamTransform;
 
-        public Blip(GameObject enemy, GameObject blipPrefab, Transform blipParent)
+        public Blip(GameObject enemy, GameObject blipPrefab, Transform blipParent, Color color, GameObject beam)
         {
             this.enemy = enemy;
             this.blipParent = blipParent;
             this.enemyBasic = enemy.GetComponent<Enemy_Basic>();
+            this.color = color;
+            if (beam != null)
+            {
+                this.beam = Instantiate(beam, Vector2.zero, Quaternion.identity, blipParent);
+                beamTransform = this.beam.GetComponent<RectTransform>();
+            }
+            
             
 
             this.blip = Instantiate(blipPrefab, Vector2.zero, Quaternion.identity, blipParent);
@@ -65,11 +77,25 @@ public class Radar : MonoBehaviour
             Vector3 pos = new Vector3(0, -10000, 0);
             if (dist <= maxDist)
             {
-                pos = (enemy.transform.position - target.position) * (100/maxDist);
-                blipImage.color = new Color(255, 255, 255, 3 - (dist / maxDist) * 3);
+                pos = (enemy.transform.position - target.position) * (200/maxDist);
+                color.a = 3 - (dist / maxDist) * 3;
+                blipImage.color = color;
             }
             
             blip.transform.position = pos+blipParent.transform.position;
+        }
+
+        public void updateBeam(Blip otherBlip)
+        {
+            Vector3 pos = otherBlip.blip.transform.position;
+            Vector3 beamDir = blip.transform.position - pos;
+            float dist = beamDir.magnitude;
+            beam.transform.position = pos + (beamDir / 2);
+
+            float angle = Mathf.Atan2(beamDir.y, beamDir.x) * Mathf.Rad2Deg;
+            beam.transform.rotation = Quaternion.AngleAxis(angle + 90, Vector3.forward);
+            beamTransform.sizeDelta = new Vector3(5, dist/2, 0);
+
         }
     }
 

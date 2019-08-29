@@ -634,7 +634,9 @@ MonoBehaviour:
   amountOfEnemies: 10
   enemyLimit: 12
   percentOfSmallerEnemies: 50
-  enemyPrefab: {fileID: 2932481576563451551, guid: a5930c879074c4e1fb3805bdc8ae6451,
+  enemyBasicPrefab: {fileID: 2932481576563451551, guid: 955c4b11a3df27542a7eea6dcb0f600c,
+    type: 3}
+  enemyPairPrefab: {fileID: 2371897385220449894, guid: edafa35f43ea06e4a94efdc38d11b347,
     type: 3}
   radar: {fileID: 783916299}
   player: {fileID: 1899755975}
@@ -692,7 +694,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1899755972}
-  range: 20
+  range: 10
   enemyBlip: {fileID: 6809884189294378124, guid: da7a166b111a15d49a16dc5b6809a183,
     type: 3}
   playerBlip: {fileID: 401593423}

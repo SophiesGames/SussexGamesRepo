@@ -158,6 +158,10 @@ public class Player : MonoBehaviour
                 //Destroy(collision.gameObject);
             }
 
+        } else if (collision.gameObject.name == "beam")
+        {
+            Damage(1);
+            Invulnerability(2);
         }
     }
 
