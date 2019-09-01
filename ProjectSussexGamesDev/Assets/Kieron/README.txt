@@ -12,6 +12,8 @@
 - Removed Numbers.png
 - Added FontAlphabetAndNumbers.png
 -----------------------------
+- Added Animation for Enemy 3
+-----------------------------
 
 For slicing:
 CollegeGameAssets.png slice by 48x48
