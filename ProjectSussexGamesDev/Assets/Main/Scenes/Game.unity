@@ -259,7 +259,7 @@ MonoBehaviour:
   amountOfEnemies: 10
   enemyLimit: 16
   percentOfSmallerEnemies: 30
-  enemyPrefab: {fileID: 2932481576563451551, guid: a5930c879074c4e1fb3805bdc8ae6451,
+  enemyPrefab: {fileID: 9082541960406952351, guid: 6c3142bb7cc6ad6439f925b357c3377a,
     type: 3}
   player: {fileID: 1899755975}
   maxEnemyDist: 50
@@ -610,8 +610,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1736950029}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0.165, y: 0.18, z: 0}
+  m_LocalScale: {x: 1.481, y: 1.498, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
@@ -630,6 +630,7 @@ GameObject:
   - component: {fileID: 1899755977}
   - component: {fileID: 1899755976}
   - component: {fileID: 1899755978}
+  - component: {fileID: 1899755979}
   m_Layer: 0
   m_Name: player
   m_TagString: Untagged
@@ -691,7 +692,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 4fcae800ffb03ae4490f229699ba0ee1, type: 3}
+  m_Sprite: {fileID: 531450558339797289, guid: 9a87e3ee47006b543825f9cba7d8706f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -710,8 +711,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1899755972}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0.766, y: 0.765, z: 0}
+  m_LocalScale: {x: 3.1317225, y: 3.1831005, z: 1}
   m_Children:
   - {fileID: 2039160147}
   m_Father: {fileID: 0}
@@ -734,7 +735,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.96, y: 0.96}
+    oldSize: {x: 0.7083333, y: 0.7083333}
     newSize: {x: 0.96, y: 0.96}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -742,17 +743,34 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.45, y: 0.31}
-      - {x: 0.32, y: 0.48}
-      - {x: -0.32999998, y: 0.48}
-      - {x: -0.48, y: 0.29}
-      - {x: -0.48, y: -0.31}
-      - {x: -0.47, y: -0.32999998}
-      - {x: -0.25, y: -0.48}
-      - {x: 0.25, y: -0.48}
-      - {x: 0.31, y: -0.45}
-      - {x: 0.48, y: -0.28}
-      - {x: 0.48, y: 0.26}
+    - - {x: 0.2878306, y: 0.26967365}
+      - {x: 0.23101388, y: 0.3367096}
+      - {x: 0.20279762, y: 0.3534767}
+      - {x: 0.16864939, y: 0.35410732}
+      - {x: 0.14881748, y: 0.35639125}
+      - {x: -0.12009141, y: 0.35628176}
+      - {x: -0.2030985, y: 0.353197}
+      - {x: -0.30875832, y: 0.24991217}
+      - {x: -0.32697558, y: 0.19011576}
+      - {x: -0.34154928, y: 0.15931153}
+      - {x: -0.35340995, y: 0.124815464}
+      - {x: -0.3534099, y: 0.03602677}
+      - {x: -0.3558994, y: -0.035507932}
+      - {x: -0.34304342, y: -0.064327784}
+      - {x: -0.31655252, y: -0.096255995}
+      - {x: -0.16716383, y: -0.2936754}
+      - {x: -0.16279848, y: -0.35150313}
+      - {x: -0.09199611, y: -0.35272908}
+      - {x: -0.084541224, y: -0.3227234}
+      - {x: 0.08034067, y: -0.3245845}
+      - {x: 0.09555305, y: -0.35133985}
+      - {x: 0.16252515, y: -0.3466885}
+      - {x: 0.17485899, y: -0.25412923}
+      - {x: 0.22130135, y: -0.21086913}
+      - {x: 0.30254966, y: -0.13883092}
+      - {x: 0.35628015, y: -0.036699492}
+      - {x: 0.35409054, y: 0.11977634}
+      - {x: 0.33046326, y: 0.18404497}
 --- !u!50 &1899755977
 Rigidbody2D:
   serializedVersion: 4
@@ -787,6 +805,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerText: {fileID: 472853994}
+--- !u!95 &1899755979
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1899755972}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ab6906fc48dcb9e4790c33e8356efd0b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2039160144
 GameObject:
   m_ObjectHideFlags: 0

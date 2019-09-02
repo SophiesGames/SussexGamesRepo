@@ -1,0 +1,1456 @@
+fileFormatVersion: 2
+guid: 9a87e3ee47006b543825f9cba7d8706f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 531450558339797289
+    second: CollegeGameAssets_0
+  - first:
+      213: -8333690809219608189
+    second: CollegeGameAssets_1
+  - first:
+      213: -5237013185999522620
+    second: CollegeGameAssets_2
+  - first:
+      213: 7842897880928564090
+    second: CollegeGameAssets_3
+  - first:
+      213: -5978288311926309461
+    second: CollegeGameAssets_4
+  - first:
+      213: -3371791307622939398
+    second: CollegeGameAssets_5
+  - first:
+      213: 3796744717301317612
+    second: CollegeGameAssets_6
+  - first:
+      213: -2279997152440146895
+    second: CollegeGameAssets_7
+  - first:
+      213: 4722309864298231295
+    second: CollegeGameAssets_8
+  - first:
+      213: -3219363113724280065
+    second: CollegeGameAssets_9
+  - first:
+      213: 5832209983417108045
+    second: CollegeGameAssets_10
+  - first:
+      213: 7729560323218808774
+    second: CollegeGameAssets_12
+  - first:
+      213: 8844468432918092569
+    second: CollegeGameAssets_13
+  - first:
+      213: -219802888731648249
+    second: CollegeGameAssets_14
+  - first:
+      213: 6699427217788160594
+    second: CollegeGameAssets_15
+  - first:
+      213: 325673995005334899
+    second: CollegeGameAssets_16
+  - first:
+      213: 8164855420912134142
+    second: CollegeGameAssets_17
+  - first:
+      213: 7083301641575023845
+    second: CollegeGameAssets_18
+  - first:
+      213: 536310653783894278
+    second: CollegeGameAssets_19
+  - first:
+      213: 7239350307461319514
+    second: CollegeGameAssets_20
+  - first:
+      213: 7384835714403503805
+    second: CollegeGameAssets_21
+  - first:
+      213: 657899947251051254
+    second: CollegeGameAssets_22
+  - first:
+      213: 3493197026645451813
+    second: CollegeGameAssets_23
+  - first:
+      213: 3765576658202411732
+    second: CollegeGameAssets_24
+  - first:
+      213: -6018102123326534759
+    second: CollegeGameAssets_25
+  - first:
+      213: 2933218465321938017
+    second: CollegeGameAssets_26
+  - first:
+      213: -1294404368834783065
+    second: CollegeGameAssets_27
+  - first:
+      213: -7965801118183392841
+    second: CollegeGameAssets_28
+  - first:
+      213: -1617149752328799316
+    second: CollegeGameAssets_29
+  - first:
+      213: -4809054941227146808
+    second: CollegeGameAssets_30
+  - first:
+      213: -8889723645498152380
+    second: CollegeGameAssets_31
+  - first:
+      213: 4902436160677201587
+    second: CollegeGameAssets_32
+  - first:
+      213: -4894194883206422486
+    second: CollegeGameAssets_33
+  - first:
+      213: 2431817870005471726
+    second: CollegeGameAssets_34
+  - first:
+      213: -7895126249213783449
+    second: CollegeGameAssets_35
+  - first:
+      213: -8841658208774097287
+    second: CollegeGameAssets_36
+  - first:
+      213: 6574821382989569722
+    second: CollegeGameAssets_37
+  - first:
+      213: -1689671520957590344
+    second: CollegeGameAssets_38
+  - first:
+      213: -6757879341960264079
+    second: CollegeGameAssets_39
+  - first:
+      213: 5547831009358611108
+    second: CollegeGameAssets_40
+  - first:
+      213: -975236902385459291
+    second: CollegeGameAssets_41
+  - first:
+      213: 7184178867426340089
+    second: CollegeGameAssets_42
+  - first:
+      213: -4374397803924008856
+    second: CollegeGameAssets_43
+  - first:
+      213: 7282697229662279874
+    second: CollegeGameAssets_44
+  - first:
+      213: -6210511016623603807
+    second: CollegeGameAssets_45
+  - first:
+      213: 1087911675232225890
+    second: CollegeGameAssets_46
+  - first:
+      213: -1971215907404285044
+    second: CollegeGameAssets_47
+  - first:
+      213: 4846599239664880642
+    second: CollegeGameAssets_48
+  - first:
+      213: 5487774499612394543
+    second: CollegeGameAssets_49
+  - first:
+      213: -6357024600670095604
+    second: CollegeGameAssets_50
+  - first:
+      213: -773738192973555824
+    second: CollegeGameAssets_51
+  - first:
+      213: 703956901577353757
+    second: CollegeGameAssets_52
+  - first:
+      213: 2362439659582350284
+    second: CollegeGameAssets_11
+  - first:
+      213: -3959915582441811850
+    second: CollegeGameAssets_53
+  - first:
+      213: -8818866041492376199
+    second: CollegeGameAssets_54
+  - first:
+      213: -4287389945006424949
+    second: CollegeGameAssets_55
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 48
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: CollegeGameAssets_0
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 248
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68a2e9a3c870bb0448339de06963f79d
+      internalID: 531450558339797289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CollegeGameAssets_1
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 248
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 523eb9d3c583b5f40ad9696ccc1454eb
+      internalID: -8333690809219608189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CollegeGameAssets_2
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 248
+        width: 42
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2e1129a065b64e4aaf63ebf9353fd74
+      internalID: -5237013185999522620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CollegeGameAssets_3
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 242
+        width: 46
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74fedf6cff6ec6d40923ef593e93a34c
+      internalID: 7842897880928564090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CollegeGameAssets_4
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 241
+        width: 34
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 533edf720342f8d41aeb988513f4bd36
+      internalID: -5978288311926309461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CollegeGameAssets_5
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 254
+        width: 68
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c470e753de1e3b458eef369052c0300
+      internalID: -3371791307622939398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CollegeGameAssets_6
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 253
+        width: 68
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40da5a782b0977e4b867b359eb866690
+      internalID: 3796744717301317612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CollegeGameAssets_7
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 253
+        width: 68
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4444d171578a8584e94c7b031c6f3243
+      internalID: -2279997152440146895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CollegeGameAssets_8
+      rect:
+        serializedVersion: 2
+        x: 711
+        y: 253
+        width: 68
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8e6b4b83db22ea468a96485278098c0
+      internalID: 4722309864298231295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CollegeGameAssets_9
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 206
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a95e0e732e5de1648be6af425d4e25a0
+      internalID: -3219363113724280065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CollegeGameAssets_10
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 206
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb807e2b9a567124da50ea43d536845c
+      internalID: 5832209983417108045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CollegeGameAssets_12
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 211
+        width: 4
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d15f7cbb29b64eb4e90d7c60ecb9473e
+      internalID: 7729560323218808774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CollegeGameAssets_13
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 208
+        width: 234
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80a17a91708103048bfb21010b7d83d5
+      internalID: 8844468432918092569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CollegeGameAssets_14
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 210
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf79f0f838770aa419546b0218463c25
+      internalID: -219802888731648249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CollegeGameAssets_15
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 202
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00a22403fb707c74fb2b4a6e9a0fa8f6
+      internalID: 6699427217788160594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CollegeGameAssets_16
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 198
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 853415ca51d1b9d43a7e5eaaf582f135
+      internalID: 325673995005334899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CollegeGameAssets_17
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 184
+        width: 34
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90de95ef4d6086b4287d87775527dfb1
+      internalID: 8164855420912134142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CollegeGameAssets_18
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 180
+        width: 34
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28bf86e408c5a7546b83dbe6cc7f827b
+      internalID: 7083301641575023845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CollegeGameAssets_19
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 152
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f560f517ddaa5043a1a15ca69d578e9
+      internalID: 536310653783894278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CollegeGameAssets_20
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 156
+        width: 20
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb67b2563ce393344913a15106788d39
+      internalID: 7239350307461319514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CollegeGameAssets_21
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 157
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c1c899e0095637448f695072bb4d5f6
+      internalID: 7384835714403503805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CollegeGameAssets_22
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 155
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9199e4b7f4c02b469a4930f70bbfcba
+      internalID: 657899947251051254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CollegeGameAssets_23
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 159
+        width: 336
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff9b6d9f503b1e741a4e5dc0b3145188
+      internalID: 3493197026645451813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CollegeGameAssets_24
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 105
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfabdd06b3148a447969d34aaeb0c876
+      internalID: 3765576658202411732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CollegeGameAssets_25
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 105
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdca9233bdf3f8c4bb4c8a2457f905a6
+      internalID: -6018102123326534759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CollegeGameAssets_26
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 105
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9b9f3e939701d44fb554674efd5a244
+      internalID: 2933218465321938017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CollegeGameAssets_27
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 105
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5737ad61dc6dcc4bba7e1c83cd85fd7
+      internalID: -1294404368834783065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CollegeGameAssets_28
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 111
+        width: 336
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18ab89121a2b76845986748e6bf48197
+      internalID: -7965801118183392841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CollegeGameAssets_29
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 107
+        width: 20
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 047010adff22f0240bd815e1dd7fa1ad
+      internalID: -1617149752328799316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CollegeGameAssets_30
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 108
+        width: 20
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce1434ae68b895a409d4275e4a57cd8a
+      internalID: -4809054941227146808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CollegeGameAssets_31
+      rect:
+        serializedVersion: 2
+        x: 638
+        y: 110
+        width: 20
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cea1a40843487b34293cd395c4cd2f0a
+      internalID: -8889723645498152380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CollegeGameAssets_32
+      rect:
+        serializedVersion: 2
+        x: 686
+        y: 113
+        width: 20
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f9c0f39fc88a744e8be8f35906511f0
+      internalID: 4902436160677201587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CollegeGameAssets_33
+      rect:
+        serializedVersion: 2
+        x: 734
+        y: 109
+        width: 21
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 1}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c1608c811899ae4d851c689f7ec5013
+      internalID: -4894194883206422486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CollegeGameAssets_34
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 56
+        width: 42
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79b5d3570cad9894495172d9a01b1d74
+      internalID: 2431817870005471726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CollegeGameAssets_35
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 56
+        width: 42
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1edc637b1a5ed048af44e4f77109b92
+      internalID: -7895126249213783449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CollegeGameAssets_36
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 56
+        width: 42
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80aaba48a00a92c48a6ebb48442cd8ea
+      internalID: -8841658208774097287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CollegeGameAssets_37
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 56
+        width: 42
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4d71a1acff305d4ca00f63587ccaea2
+      internalID: 6574821382989569722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CollegeGameAssets_38
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 64
+        width: 336
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 605428725611fef49a3fe59d427a2e06
+      internalID: -1689671520957590344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CollegeGameAssets_39
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 61
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fea4b19b27384d84e93f7dd9e3328dbc
+      internalID: -6757879341960264079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CollegeGameAssets_40
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 61
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3945781950d683440a55f0d3b22ea161
+      internalID: 5547831009358611108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CollegeGameAssets_41
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 61
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60e2a1253be6e374895a43fdfa0a6182
+      internalID: -975236902385459291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CollegeGameAssets_42
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 61
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c0ab836e4fe4a144939c1e9def4300e
+      internalID: 7184178867426340089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CollegeGameAssets_43
+      rect:
+        serializedVersion: 2
+        x: 731
+        y: 61
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d793c2190d64a3f4287dd04f0f7c7881
+      internalID: -4374397803924008856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CollegeGameAssets_44
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 7
+        width: 42
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79f9c71959bfd7c4ca61e6bb8e95f982
+      internalID: 7282697229662279874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CollegeGameAssets_45
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 7
+        width: 42
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fab7402016ce28d4eafb04efaa36c6be
+      internalID: -6210511016623603807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CollegeGameAssets_46
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 7
+        width: 42
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1ba011046e4f3d43b72572bcef81b9c
+      internalID: 1087911675232225890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CollegeGameAssets_47
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 16
+        width: 336
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af4e7f9293002b847ac28f1b011e1f60
+      internalID: -1971215907404285044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CollegeGameAssets_48
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 21
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8f80bdd7efa12e4184f26065f033229
+      internalID: 4846599239664880642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CollegeGameAssets_49
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 18
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0441e12b0f97e8045a89b6f8e66e0f35
+      internalID: 5487774499612394543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CollegeGameAssets_50
+      rect:
+        serializedVersion: 2
+        x: 637
+        y: 14
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e14402127bf65cd4f94f7b8a94a3b176
+      internalID: -6357024600670095604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CollegeGameAssets_51
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 12
+        width: 30
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af8c98d606c3e584eb1e6c00c63df1c4
+      internalID: -773738192973555824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CollegeGameAssets_52
+      rect:
+        serializedVersion: 2
+        x: 731
+        y: 13
+        width: 26
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e4306ace833b03459641de22ed055e4
+      internalID: 703956901577353757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CollegeGameAssets_11
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 211
+        width: 4
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68582f2f7a5174f4ab2bbbde325cec99
+      internalID: 2362439659582350284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CollegeGameAssets_53
+      rect:
+        serializedVersion: 2
+        x: 673
+        y: 194
+        width: 46
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbcc818413be4a140b870190fdc2d179
+      internalID: -3959915582441811850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CollegeGameAssets_54
+      rect:
+        serializedVersion: 2
+        x: 721
+        y: 193
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e82e30db59ac4849bdc4e0edaecac17
+      internalID: -8818866041492376199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CollegeGameAssets_55
+      rect:
+        serializedVersion: 2
+        x: 769
+        y: 194
+        width: 46
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75e29e8aa0d7567458b6d40ef8b316d9
+      internalID: -4287389945006424949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 291c1235a183b9f49a9a1f6091ef3256
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

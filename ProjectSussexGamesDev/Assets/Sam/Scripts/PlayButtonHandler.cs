@@ -17,6 +17,5 @@ public class PlayButtonHandler : MonoBehaviour
     void TaskOnClick()
     {
         SceneManager.LoadScene("Game-Brad");
-        SceneManager.UnloadScene("Menu");
     }
 }
