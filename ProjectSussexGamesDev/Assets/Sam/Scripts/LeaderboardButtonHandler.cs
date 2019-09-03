@@ -4,18 +4,18 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class PlayButtonHandler : MonoBehaviour
+public class LeaderboardButtonHandler : MonoBehaviour
 {
-    public Button PlayButton;
+    public Button LeaderboardButton;
 
     void Start()
     {
-        Button btn = PlayButton.GetComponent<Button>();
+        Button btn = LeaderboardButton.GetComponent<Button>();
         btn.onClick.AddListener(TaskOnClick);
     }
 
     void TaskOnClick()
     {
-        SceneManager.LoadScene("Game");
+        SceneManager.LoadScene("LeaderboardMenu");
     }
 }
