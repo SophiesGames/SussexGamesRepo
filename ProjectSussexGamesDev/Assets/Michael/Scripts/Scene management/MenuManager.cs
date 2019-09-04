@@ -4,12 +4,13 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class Menue : MonoBehaviour
+public class MenuManager : MonoBehaviour
 {
    
 	public void Play()
 	{
 		SceneManager.LoadScene("Game");
+        Debug.Log("Loading game");
 	}
 
 	public void Options()
@@ -17,10 +18,15 @@ public class Menue : MonoBehaviour
 		SceneManager.LoadScene("Options");
 	}
 
-	public void BackToMenue()
+	public void BackToMenu()
 	{
 		SceneManager.LoadScene("Menu");
 	}
+
+    public void Leaderboard()
+    {
+        SceneManager.LoadScene("Leaderboard");
+    }
 
 	public void Quit()
 	{
