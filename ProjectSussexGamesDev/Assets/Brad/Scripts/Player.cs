@@ -7,15 +7,22 @@ public class Player : MonoBehaviour
 {
     public float health = 3;
     public float size = 0;
-    public int cameraIncreaseIncrement = 5; // how much the size needs to crease before the camera gets larger
+    public int cameraIncreaseIncrement = 5; // how much the size needs to increase before the camera gets larger
     public Camera camera;
+    [HideInInspector]
     public Vector3 movingVector = Vector3.zero;
+    public bool enableJoystick = true;
+    public GameObject joystick;
+    public float speedMultiplier = 1;
 
+    GameObject stick;
     float invulnerabilityTime = 0;
     float invulnerabilityTimer = 0;
     bool canTakeDamage = true;
     int previousSize = 0;
     int sizeIncreaseDifference = 0;
+
+    Vector3 firstTouchPos = Vector3.zero;
 
     SpriteRenderer sr;
     private IEnumerator flashC;
@@ -23,10 +30,13 @@ public class Player : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        joystick = Instantiate(joystick);
+        joystick.transform.SetParent(GameObject.Find("Canvas").transform);
         sr = GetComponent<SpriteRenderer>();
         size = 15;
         previousSize = (int) size;
         camera.orthographicSize = 5 * (size / 25);
+        stick = joystick.transform.GetChild(0).gameObject;
     }
 
     // Update is called once per frame
@@ -38,13 +48,40 @@ public class Player : MonoBehaviour
         if (Input.GetMouseButton(0))
         {
             Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            mousePos.z = 0;
-            movingVector = -(transform.position - mousePos) / 10;
-            transform.position += movingVector;
+                
+                
+            if (enableJoystick == false)
+            {
+                mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                mousePos.z = 0;
+                movingVector = -(transform.position - mousePos) / 10;
+                print(movingVector);
+            }
+            else
+            {
+                mousePos = Input.mousePosition;
+                mousePos.z = 0;
+                if (firstTouchPos == Vector3.zero)
+                {
+                    firstTouchPos = mousePos;
+                }
+
+                movingVector = -(firstTouchPos - mousePos) / 2000;
+                stick.transform.position = mousePos;
+                joystick.transform.position = firstTouchPos;
+            }
+                
+            transform.position += movingVector * speedMultiplier;
+
+        } else{
+            movingVector = Vector3.zero;
+            firstTouchPos = Vector3.zero;
+            stick.transform.position = new Vector2(0, -1000);
+            joystick.transform.position = new Vector2(0, -1000);
         }
 
         //If invulnerability is activated the player will not be able to take any damage
-        if(invulnerabilityTimer < invulnerabilityTime){
+        if (invulnerabilityTimer < invulnerabilityTime){
             invulnerabilityTimer += Time.deltaTime;
             canTakeDamage = false;
         } else{
@@ -61,7 +98,7 @@ public class Player : MonoBehaviour
         if (sizeIncreaseDifference >= cameraIncreaseIncrement)
         {
             camera.orthographicSize = Vector3.Slerp(new Vector3(camera.orthographicSize, 0, 0), new Vector3(5 * (size / 25), 0, 0), 0.1f).x;
-            print(camera.orthographicSize + " " + 5 * (size / 25));
+            //print(camera.orthographicSize + " " + 5 * (size / 25));
             //Makes sure the camera is the correct size before resetting the counter
             if(camera.orthographicSize >= (5 * (size / 25))-0.05f)
             {
@@ -107,15 +144,15 @@ public class Player : MonoBehaviour
     //When the player touches an enemy the Danger and Invulnerability functions are called
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.GetComponent<Enemy_Basic>() != null)
+        if (collision.gameObject.GetComponent<Enemy>() != null)
         {
-            Enemy_Basic eb = collision.gameObject.GetComponent<Enemy_Basic>();
+            Enemy eb = collision.gameObject.GetComponent<Enemy>();
             //If the enemies size is more than the playes, the player takes damage
             //If the enemies size is less than the players, the enemy is destroyed and the players size increases
             if(eb.size > size){
                 Damage(1);
                 Invulnerability(2);
-            } else if(eb.size < size){
+            } else if(eb.size <= size){
                 size += eb.size / 5;
                 if(size > 50){
                     size = 50;

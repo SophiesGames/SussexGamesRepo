@@ -258,9 +258,11 @@ MonoBehaviour:
   EnemyCounterIncreaseDelay: 5
   amountOfEnemies: 10
   enemyLimit: 16
+  minEnemySize: 5
   percentOfSmallerEnemies: 30
-  enemyPrefab: {fileID: 9082541960406952351, guid: 6c3142bb7cc6ad6439f925b357c3377a,
-    type: 3}
+  enemyPrefab:
+  - {fileID: 9082541960406952351, guid: 6c3142bb7cc6ad6439f925b357c3377a, type: 3}
+  - {fileID: 8024610684787437536, guid: 5c7d3a78aa71d754884a0db203677a96, type: 3}
   player: {fileID: 1899755975}
   maxEnemyDist: 50
 --- !u!1 &855681699
@@ -655,6 +657,9 @@ MonoBehaviour:
   cameraIncreaseIncrement: 5
   camera: {fileID: 2039160146}
   movingVector: {x: 0, y: 0, z: 0}
+  enableJoystick: 1
+  joystick: {fileID: 8520240768456685239, guid: 7fc2f756adbfc244a8ea680e92680792,
+    type: 3}
 --- !u!212 &1899755974
 SpriteRenderer:
   m_ObjectHideFlags: 0

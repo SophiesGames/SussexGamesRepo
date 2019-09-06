@@ -9,13 +9,14 @@ public class Spawning : MonoBehaviour
 
     public int amountOfEnemies = 10;
     public int enemyLimit = 12;
+    public float minEnemySize = 5;
 
     [Range(0, 100)]
     public int percentOfSmallerEnemies = 30;
 
     int previousTimerAmount = 0;
 
-    public GameObject enemyPrefab;
+    public GameObject[] enemyPrefab;
 
     public Transform player;
     private Player playerObj;
@@ -36,13 +37,13 @@ public class Spawning : MonoBehaviour
         if (enemies.Count < amountOfEnemies)
         {
 
-            GameObject newEnemy = spawnNewObject(enemyPrefab);
+            GameObject newEnemy = spawnNewObject(enemyPrefab[Random.Range(0, enemyPrefab.Length)]);
             enemies.Add(newEnemy);
             float amountOfSmaller = 0;
 
             foreach (GameObject enemy in enemies)
             {
-                Enemy_Basic eb = enemy.GetComponent<Enemy_Basic>();
+                Enemy eb = enemy.GetComponent<Enemy>();
                 if (eb.size < playerObj.size)
                 {
                     amountOfSmaller += 1;
@@ -51,11 +52,11 @@ public class Spawning : MonoBehaviour
             float currentPercent = (amountOfSmaller / enemies.Count)*100;
             if (currentPercent <= percentOfSmallerEnemies)
             {
-                newEnemy.GetComponent<Enemy_Basic>().setSize(Random.Range(1, playerObj.size));
+                newEnemy.GetComponent<Enemy>().setSize(Random.Range(minEnemySize, playerObj.size));
             }
             else
             {
-                newEnemy.GetComponent<Enemy_Basic>().setSize(Random.Range(1, 50));
+                newEnemy.GetComponent<Enemy>().setSize(Random.Range(minEnemySize, 50));
             }
 
             
@@ -117,6 +118,7 @@ public class Spawning : MonoBehaviour
     public static void respawn(GameObject obj, GameObject player)
     {
         Player playerObj = player.GetComponent<Player>();
+        Enemy enemy = obj.GetComponent<Enemy>();
 
         float[] x = createRadiusRange(10, 15, playerObj);
 
@@ -125,6 +127,13 @@ public class Spawning : MonoBehaviour
         Vector3 spawnPosition = new Vector3(player.transform.position.x + x[Random.Range(0, 2)], player.transform.position.y + y[Random.Range(0, 2)]);
 
         obj.transform.position = spawnPosition;
-        obj.GetComponent<Enemy_Basic>().randomSpeed();
+        if (obj.GetComponent<Intelligent_Behaviour>())
+        {
+            enemy.scaleSpeed();
+        }
+        else
+        {
+            enemy.randomSpeed();
+        }
     }
 }
