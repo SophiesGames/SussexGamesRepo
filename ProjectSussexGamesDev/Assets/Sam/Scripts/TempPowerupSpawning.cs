@@ -1,62 +1,62 @@
-﻿using System.Collections;
+﻿ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class TempPowerupSpawning : MonoBehaviour
 {
 
-    //public float PowerupCounterIncreaseDelay = 5;
+    public float PowerupCounterIncreaseDelay = 5;
 
-    //public int amountOfPowerups = 2;
-    //public int powerupLimit = 5;
+    public int amountOfPowerups = 2;
+    public int powerupLimit = 5;
 
-    //int previousTimerAmount = 0;
+    int previousTimerAmount = 0;
 
-    //public GameObject[] powerupPrefab;
+    public GameObject[] powerupPrefab;
 
-    //public Transform player;
-    //private Player playerObj;
+    public Transform player;
+    private Player playerObj;
     //[HideInInspector]
-    //public static List<GameObject> powerups = new List<GameObject>();
-    //public float maxPowerupDist = 50;
+    public static List<GameObject> powerups = new List<GameObject>();
+    public float maxPowerupDist = 50;
 
     // Start is called before the first frame update
-    //void Start()
-    //{
-    //    enemies = new List<GameObject>();
-    //    playerObj = player.GetComponent<Player>();
-    //}
+    void Start()
+    {
+        //powerups = new List<GameObject>();
+        //playerObj = player.GetComponent<Player>();
+    }
 
     // Update is called once per frame
-    //void Update()
-    //{
+    void Update()
+    {
         //if (powerups.Count < amountOfPowerups)
         //{
 
-        //    GameObject newPowerup = spawnNewObject(powerupPrefab[Random.Range(0, enemyPrefab.Length)]);
-        //    powerups.Add(newPowerup);
+           // GameObject newPowerup = spawnNewObject(powerupPrefab[Random.Range(0, powerupPrefab.Length)]);
+           // powerups.Add(newPowerup);
 
-        //    newPowerup.GetComponent<Powerup>();
+            //newPowerup.GetComponent<Powerup>();
 
 
         //}
 
         //foreach (GameObject powerup in powerups)
         //{
-        //    if (Vector3.Distance(player.transform.position, powerup.transform.position) > maxPpwerupDist)
-        //    {
-        //        respawn(powerup, player.gameObject);
-        //    }
+            //if (Vector3.Distance(player.transform.position, powerup.transform.position) > maxPowerupDist)
+            //{
+            ///    respawn(powerup, player.gameObject);
+            //}
         //}
 
         //if (Mathf.RoundToInt(GameInfo.timer) % PowerupCounterIncreaseDelay == 0 && Mathf.RoundToInt(GameInfo.timer) != previousTimerAmount && powerups.Count < powerupLimit)
         //{
-            ////print(amountOfPowerups + " " + GameInfo.powerups.Count);
-        //    amountOfPowerups += 1;
-        //    previousTimerAmount = Mathf.RoundToInt(GameInfo.timer);
-        //}
+           // //print(amountOfPowerups + " " + GameInfo.powerups.Count);
+           // amountOfPowerups += 1;
+           // previousTimerAmount = Mathf.RoundToInt(GameInfo.timer);
+       // }
 
-    //}
+    }
 
     //GameObject spawnNewObject(GameObject obj)
     //{
@@ -91,7 +91,7 @@ public class TempPowerupSpawning : MonoBehaviour
         //x[0] = Random.Range(MinDist, MaxDist);
         //x[1] = Random.Range(-MaxDist, -MinDist);
 
-       // return x;
+        //return x;
     //}
 
     //public static void respawn(GameObject obj, GameObject player)
